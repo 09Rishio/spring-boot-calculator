@@ -41,7 +41,7 @@ public class CalculatorController {
         }
     }
 
-    @GetMapping("/potenciacion/{a}/{b}")
+    @GetMapping("/exponenciacion/{a}/{b}")
     public ResponseEntity<?> potenciacion(@PathVariable double a, @PathVariable double b){
         try {
             double result = calculatorService.exponenciar(a, b);
